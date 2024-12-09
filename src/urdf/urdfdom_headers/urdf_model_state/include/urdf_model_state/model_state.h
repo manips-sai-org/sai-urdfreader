@@ -47,7 +47,7 @@
 #include <urdf_model/twist.h>
 
 
-namespace Sai2Urdfreader{
+namespace SaiUrdfreader{
 
 class Time
 {

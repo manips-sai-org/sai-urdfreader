@@ -29,7 +29,7 @@ int main (int argc, char ** argv) {
 	world_file.close();
 
 	// parse xml string
-	auto world_ptr = Sai2Urdfreader::parseURDFWorld(world_xml_string);
+	auto world_ptr = SaiUrdfreader::parseURDFWorld(world_xml_string);
 
 	// print world properties
 	cout << "World name: " << world_ptr->name_ << "\n";

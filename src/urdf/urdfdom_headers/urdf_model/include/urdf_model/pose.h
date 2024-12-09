@@ -56,7 +56,7 @@
 #include <urdf/urdfdom_headers/urdf_exception/include/urdf_exception/exception.h>
 #include <assert.h>
 
-namespace Sai2Urdfreader{
+namespace SaiUrdfreader{
 
 class Vector3
 {

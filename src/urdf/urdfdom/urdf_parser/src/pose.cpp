@@ -51,7 +51,7 @@
 #include <urdf/urdfdom_headers/urdf_exception/include/urdf_exception/exception.h>
 
 
-namespace Sai2Urdfreader{
+namespace SaiUrdfreader{
 
 bool parsePose(Pose &pose, tinyxml2::XMLElement* xml)
 {

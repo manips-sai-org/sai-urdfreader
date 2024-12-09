@@ -42,7 +42,7 @@
     #include "urdf/boost_replacement/printf_console.h"
 #endif
 
-namespace Sai2Urdfreader{
+namespace SaiUrdfreader{
 
 bool parseMaterial(Material &material, tinyxml2::XMLElement *config, bool only_name_is_ok);
 bool parseLink(Link &link, tinyxml2::XMLElement *config);

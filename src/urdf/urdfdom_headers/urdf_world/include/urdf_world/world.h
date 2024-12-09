@@ -46,7 +46,7 @@
 #include "urdf/urdfdom_headers/urdf_model/include/urdf_model/model.h"
 #include "urdf/urdfdom_headers/urdf_model/include/urdf_model/pose.h"
 
-namespace Sai2Urdfreader{
+namespace SaiUrdfreader{
 // light class
 class Light
 {

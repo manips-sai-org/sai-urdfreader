@@ -43,7 +43,7 @@
 #include <tinyxml2.h>
 #include <console_bridge/console.h>
 
-namespace Sai2Urdfreader{
+namespace SaiUrdfreader{
 
 bool parsePose(Pose &pose, TiXmlElement* xml);
 
