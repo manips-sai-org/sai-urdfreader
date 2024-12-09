@@ -1,5 +1,5 @@
-# sai2-urdfreader
-This is a standalone port of the ROS urdf reader for use with the SAI2 libraries.
+# sai-urdfreader
+This is a standalone port of the ROS urdf reader for use with the SAI libraries.
 
 ## Dependencies
 It depends on tinyxml2. 

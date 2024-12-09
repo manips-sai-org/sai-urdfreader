@@ -52,7 +52,7 @@
 #include <tinyxml2.h>
 #include <urdf/urdfdom/urdf_parser/include/urdf_parser/urdf_parser.h>
 
-namespace Sai2Urdfreader{
+namespace SaiUrdfreader{
 
 bool parsePose(Pose &pose, tinyxml2::XMLElement* xml);
 

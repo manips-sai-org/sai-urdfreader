@@ -29,7 +29,7 @@ int main (int argc, char ** argv) {
 	model_file.close();
 
 	// parse xml string
-	auto model_ptr = Sai2Urdfreader::parseURDF(model_xml_string);
+	auto model_ptr = SaiUrdfreader::parseURDF(model_xml_string);
 
 	// print model properties
 	cout << "Robot name: " << model_ptr->getName() << "\n";

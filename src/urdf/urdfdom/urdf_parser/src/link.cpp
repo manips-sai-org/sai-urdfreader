@@ -55,7 +55,7 @@
 
 
 
-namespace Sai2Urdfreader{
+namespace SaiUrdfreader{
 
 bool parsePose(Pose &pose, tinyxml2::XMLElement* xml);
 

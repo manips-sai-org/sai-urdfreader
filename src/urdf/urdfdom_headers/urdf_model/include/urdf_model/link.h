@@ -53,7 +53,7 @@
 #include "color.h"
 #include "pose.h"
 
-namespace Sai2Urdfreader{
+namespace SaiUrdfreader{
 
 class Geometry
 {

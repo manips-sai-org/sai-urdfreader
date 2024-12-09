@@ -17,8 +17,8 @@ jobs:
       - name: build-repo
         uses: ./.github/actions/build-repo
 
-      - name: Archive Sai2-urdfreader Artifact
+      - name: Archive Sai-urdfreader Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: sai2-urdfreader-artifact
-          path: build/libsai2-urdf.a
+          name: sai-urdfreader-artifact
+          path: build/libsai-urdf.a

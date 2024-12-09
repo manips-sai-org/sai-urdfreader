@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(SAI2-URDF)
+project(SAI-URDF)
 set(PROJECT_VERSION 0.1.0)
 
 option(BUILD_EXAMPLES "Build examples" ON)
@@ -26,7 +26,7 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
   add_compile_definitions(ENABLE_DEBUG_PRINTS)
 endif()
 
-set(SAI2-URDF_INCLUDE_DIRS
+set(SAI-URDF_INCLUDE_DIRS
     ${PROJECT_SOURCE_DIR}/src
     ${PROJECT_SOURCE_DIR}/src/urdf/urdfdom/urdf_parser/include)
 
@@ -47,30 +47,30 @@ set(URDF_SOURCE
 include_directories(${URDF_INCLUDE_DIR})
 
 # Create the library
-add_library(sai2-urdf STATIC ${URDF_SOURCE})
+add_library(sai-urdf STATIC ${URDF_SOURCE})
 # include tinyxml2
 find_library(TINYXML_LIBRARIES tinyxml2)
 
-set(SAI2-URDF_LIBRARIES sai2-urdf ${TINYXML_LIBRARIES})
+set(SAI-URDF_LIBRARIES sai-urdf ${TINYXML_LIBRARIES})
 
 #
 # export package
 #
 
 # export package for use from the build tree
-export(TARGETS sai2-urdf FILE ${PROJECT_BINARY_DIR}/SAI2-URDFTargets.cmake)
-export(PACKAGE SAI2-URDF)
+export(TARGETS sai-urdf FILE ${PROJECT_BINARY_DIR}/SAI-URDFTargets.cmake)
+export(PACKAGE SAI-URDF)
 
 # configure package
-set(CONF_INCLUDE_DIRS ${SAI2-URDF_INCLUDE_DIRS} ${TINYXML_INCLUDE_DIR})
-set(CONF_LIBRARIES ${SAI2-URDF_LIBRARIES})
+set(CONF_INCLUDE_DIRS ${SAI-URDF_INCLUDE_DIRS} ${TINYXML_INCLUDE_DIR})
+set(CONF_LIBRARIES ${SAI-URDF_LIBRARIES})
 
 # create package configuration and version files
-configure_file(SAI2-URDFConfig.cmake.in
-               "${PROJECT_BINARY_DIR}/SAI2-URDFConfig.cmake" @ONLY)
+configure_file(SAI-URDFConfig.cmake.in
+               "${PROJECT_BINARY_DIR}/SAI-URDFConfig.cmake" @ONLY)
 include(CMakePackageConfigHelpers)
 write_basic_package_version_file(
-  "${CMAKE_CURRENT_BINARY_DIR}/SAI2-URDFConfigVersion.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/SAI-URDFConfigVersion.cmake"
   VERSION ${PROJECT_VERSION}
   COMPATIBILITY SameMajorVersion)
 
